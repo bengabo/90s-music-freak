@@ -3,10 +3,49 @@
 </pre> -->
 
 <div class="uk-container uk-padding">
-  <h1>musics</h1>
+  <h1 class="uk-text-nowrap uk-text-uppercase uk-text-bold uk-text-italic">90's Music Freak</h1>
+
+  <!-- Filter buttons -->
+  <div class="uk-flex uk-grid-small uk-margin">
+
+    <div>
+      <button
+        (click)="musicTypeDropdownOpen = !musicTypeDropdownOpen"
+        class="uk-button uk-button-default uk-button-small uk-text-nowrap">
+        Genre
+      </button>
+      <div *ngIf="musicTypeDropdownOpen"
+        class="uk-dropdown uk-open uk-width-medium">
+        <app-music-genre-filter (applied)="musicGenreFilterApplied ($event)"></app-music-genre-filter>
+      </div>
+    </div>
+
+    <div>
+      <button 
+        (click)="yearDropdown= !yearDropdown"
+        class="uk-button uk-button-default uk-button-small uk-text-nowrap">
+        Year
+      </button>
+      <div *ngIf="yearDropdown" class="uk-dropdown uk-open uk-width-medium">
+        <app-year-filter (applied)="yearFilterApplied ($event)"></app-year-filter> 
+      </div>
+    </div>
+
+    <!-- <div>
+      <button class="uk-button uk-button-default uk-button-small uk-text-nowrap">
+        Artist
+      </button>
+    </div> -->
+  </div>
 
   <!-- Music cards -->
-  <div *ngIf="(musics$ | async) as musics; else loading">
+  <div *ngIf="(musics$ | async) as musics">
+
+    <!-- Loading spinner  -->
+    <ng-container *ngIf="musics.length == 0">
+      <div uk-spinner="ratio: 5" class="uk-align-center uk-text-center"></div>
+    </ng-container>
+
     <div class="uk-grid-match uk-child-width-1-3@s" uk-grid>
       <div *ngFor="let music of musics">
         <div class="uk-card">
@@ -33,10 +72,4 @@
       </div>
     </div>
   </div>
-  
-  <!-- Loading spinner  -->
-  <ng-template #loading>
-    <div uk-spinner="ratio: 5" class="uk-align-center uk-text-center"></div>
-  </ng-template>
-
 </div>
