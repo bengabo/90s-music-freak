@@ -33,6 +33,6 @@ export class YearFilterComponent implements OnInit {
   submit(formValue) {
 
     const years = Object.keys(formValue).filter(item => formValue[item]);
-    this.applied.emit(years)
+    this.applied.emit(years);
   }
 }

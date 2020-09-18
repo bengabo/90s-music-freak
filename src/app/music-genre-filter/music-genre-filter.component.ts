@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
@@ -8,23 +8,26 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 })
 export class MusicGenreFilterComponent implements OnInit {
 
+  @Input() defaultFilters = [];
   @Output() applied = new EventEmitter();
-
+  
   form: FormGroup;
 
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
 
+    console.log(this.defaultFilters);
+
     this.form = this.formBuilder.group({
-      Electronic: [],
-      Fusion: [],
-      Jazz: [],
-      Metal: [],
-      Pop: [],
-      Rock: [],
-      Rap: [],
-      Soundtrack: []
+      Electronic: [this.defaultFilters.includes('Electronic')],
+      Fusion: [this.defaultFilters.includes('Fusion')],
+      Jazz: [this.defaultFilters.includes('Jazz')],
+      Metal: [this.defaultFilters.includes('Metal')],
+      Pop: [this.defaultFilters.includes('Pop')],
+      Rock: [this.defaultFilters.includes('Rock')],
+      Rap: [this.defaultFilters.includes('Rap')],
+      Soundtrack: [this.defaultFilters.includes('Soundtrack')]
     });
   } 
 
@@ -32,5 +35,6 @@ export class MusicGenreFilterComponent implements OnInit {
 
     const musicGenres = Object.keys(formValue).filter(item => formValue[item]);
     this.applied.emit(musicGenres);
+
   }
 }

@@ -1,31 +1,35 @@
 <form [formGroup]="form" (submit)="submit(form.value)">
   <div uk-grid class="uk-child-width-1-1">
     <label>
-      <input class="uk-checkbox" type="checkbox" formControlName='Electronic'>
+      <input class="uk-checkbox" type="checkbox" [formControlName]="'Electronic'">
       Electronic
     </label>
     <label>
-      <input class="uk-checkbox" type="checkbox" formControlName='Fusion'>
+      <input class="uk-checkbox" type="checkbox" [formControlName]="'Fusion'">
       Fusion
     </label>
     <label>
-      <input class="uk-checkbox" type="checkbox" formControlName='Jazz'>
+      <input class="uk-checkbox" type="checkbox" [formControlName]="'Jazz'">
       Jazz
     </label>
     <label>
-      <input class="uk-checkbox" type="checkbox" formControlName='Metal'>
+      <input class="uk-checkbox" type="checkbox" [formControlName]="'Metal'">
       Metal
     </label>
     <label>
-      <input class="uk-checkbox" type="checkbox" formControlName='Pop'>
+      <input class="uk-checkbox" type="checkbox" [formControlName]="'Pop'">
       Pop
     </label>
     <label>
-      <input class="uk-checkbox" type="checkbox" formControlName='Rock'>
+      <input class="uk-checkbox" type="checkbox" [formControlName]="'Rap'">
+      Rap
+    </label>
+    <label>
+      <input class="uk-checkbox" type="checkbox" [formControlName]="'Rock'">
       Rock
     </label>
     <label>
-      <input class="uk-checkbox" type="checkbox" formControlName='Soundtrack'>
+      <input class="uk-checkbox" type="checkbox" [formControlName]="'Soundtrack'">
       Soundtrack
     </label>
   </div>

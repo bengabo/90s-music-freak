@@ -10,13 +10,16 @@
 
     <div>
       <button
-        (click)="musicTypeDropdownOpen = !musicTypeDropdownOpen"
+        (click)="musicGenreDropdownOpen = !musicGenreDropdownOpen"
+        [ngClass]="{ 'uk-button-primary': currentMusicGenreFilters.length > 0 }"
         class="uk-button uk-button-default uk-button-small uk-text-nowrap">
         Genre
       </button>
-      <div *ngIf="musicTypeDropdownOpen"
+      <div *ngIf="musicGenreDropdownOpen"
         class="uk-dropdown uk-open uk-width-medium">
-        <app-music-genre-filter (applied)="musicGenreFilterApplied ($event)"></app-music-genre-filter>
+        <app-music-genre-filter
+          [defaultFilters]="currentMusicGenreFilters"
+          (applied)="musicGenreFilterApplied ($event)"></app-music-genre-filter>
       </div>
     </div>
 
@@ -27,7 +30,7 @@
         Year
       </button>
       <div *ngIf="yearDropdown" class="uk-dropdown uk-open uk-width-medium">
-        <app-year-filter (applied)="yearFilterApplied ($event)"></app-year-filter> 
+        <app-year-filter (applied)="YearFilterApplied ($event)"></app-year-filter> 
       </div>
     </div>
 

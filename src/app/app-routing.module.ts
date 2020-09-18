@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { MusicsComponent } from '../app/musics/musics.component'
+import { MusicsComponent } from '../app/musics/musics.component';
 
 const routes: Routes = [
   {
@@ -11,7 +11,7 @@ const routes: Routes = [
     path: '',
     redirectTo: 'musics',
     pathMatch: 'full'
-  }
+  },
 ];
 
 @NgModule({

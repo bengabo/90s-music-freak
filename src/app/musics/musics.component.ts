@@ -9,10 +9,13 @@ import { Router, ActivatedRoute } from '@angular/router';
 })
 export class MusicsComponent implements OnInit {
 
-  musicTypeDropdownOpen = false;
+  musicGenreDropdownOpen = false;
   yearDropdown = false;
 
+  currentMusicGenreFilters = []; 
+
   musics$ = this.dataService.musics$;
+  years$ = this.dataService.years$;
 
   constructor(
     private dataService: DataService,
@@ -20,18 +23,23 @@ export class MusicsComponent implements OnInit {
     private route: ActivatedRoute
   )  { }
 
-  ngOnInit(): void {
-
-    this.dataService.loadMusics();
+  ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      const musicGenreFilters = params['music-genre'] || [];
+      this.dataService.loadMusics(musicGenreFilters);
+      this.currentMusicGenreFilters = musicGenreFilters;
+    });
+    
   }
 
   musicGenreFilterApplied($event) {
-    this.musicTypeDropdownOpen = false;
-    this.router.navigate(['musics'], { queryParams: { 'genre': $event }})
+    this.musicGenreDropdownOpen = false;
+    this.router.navigate(['musics'], { queryParams: { 'music-genre' : $event }});
   }
 
   yearFilterApplied($event) {
+
     this.yearDropdown = false;
-    this.router.navigate(['musics'], { queryParams: { 'year': $event }})
+    this.router.navigate(['years'], { queryParams: { 'years' : $event}});
   }
 }
