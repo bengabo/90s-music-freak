@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "music-freak"
+    }
+  },
+  "defaultProject": "music-freak",
+  "cli": {
+    "analytics": "01fb3f7c-7110-4eae-ba1e-2b90e15cad61"
+  }
 }

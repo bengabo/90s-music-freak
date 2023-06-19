@@ -1,0 +1,246 @@
+[
+
+ {
+    "artist": "Alice in Chains",
+    "album": "Jar of Flies",
+    "year": "1994",
+    "image": "../../assets/images/alice-in-chains_nutshell.jpg",
+    "genre": "Grunge",
+    "country": "USA"
+  },
+
+  {
+    "artist": "Craig Armstrong",
+    "album": "The Space Between Us",
+    "year": "1998",
+    "image": "../../assets/images/craig-armstrong_the-space-between-us.jpg",
+    "genre": "Instrumental",
+    "country": "UK"
+  },
+
+  {
+    "artist": "Alain Bashung",
+    "album": "Fantaisie militaire",
+    "year": "1998",
+    "image": "../../assets/images/alain-bashung_fantaisie-militaire.jpg",
+    "genre": "Rock",
+    "country": "France"
+  },
+
+  {
+    "artist": "Björk",
+    "album": "Homogenic",
+    "year": "1997",
+    "image": "../../assets/images/bjork_homogenic.jpg",
+    "genre": "Electronic / Pop",
+    "country": "Iceland"
+  },
+
+  {
+    "artist": "Body Count",
+    "album": "Body Count aka Copkiller",
+    "year": "1992",
+    "image": "../../assets/images/body-count_body-count.jpg",
+    "genre": "Metal",
+    "country": "USA"
+  },
+
+  {
+  "artist": "Daft Punk",
+  "album": "Homework",
+  "year": "1997",
+  "image": "../../assets/images/daft-punk_homework.jpg",
+  "genre": "Electronic",
+  "country": "France"
+  },
+
+  {
+  "artist": "Death in Vegas",
+  "album": "The Contino Sessions",
+  "year": "1999",
+  "image": "../../assets/images/death-in-vegas_the-contino-sessions.jpg",
+  "genre": "Electronic / Rock",
+  "country": "UK"
+  },
+
+  {
+  "artist": "Dimitri From Paris",
+  "album": "Sacrebleu",
+  "year": "1996",
+  "image": "../../assets/images/dimitri-from-paris_sacrebleu.jpg",
+  "genre": "Electronic",
+  "country": "France"
+  },
+
+  {
+  "artist": "Jay-Jay Johanson",
+  "album": "Whiskey",
+  "year": "1997",
+  "image": "../../assets/images/jay-jay-johanson_whiskey.jpg",
+  "genre": "Pop",
+  "country": "Sweden"
+  },
+
+  {
+    "artist": "Marilyn Manson",
+    "album": "Antichrist Superstar",
+    "year": "1996",
+    "image": "../../assets/images/marilyn-manson_antichrist-superstar.jpg",
+    "genre": "Industrial metal",
+    "country": "USA"
+  },
+
+  {
+    "artist": "Massive Attack",
+    "album": "Mezzanine",
+    "year": "1998",
+    "image": "../../assets/images/massive-attack_mezzanine.jpg",
+    "genre": "Electronic",
+    "country": "UK"
+  },
+
+  {
+    "artist": "Noir Désir",
+    "album": "666.667 Club",
+    "year": "1996",
+    "image": "../../assets/images/noir-desir_666-667-club.jpg",
+    "genre": "Rock",
+    "country": "France"
+  },
+  
+  {
+    "artist": "Michael Nyman",
+    "album": "The Piano",
+    "year": "1993",
+    "image": "../../assets/images/michael-nyman_the-piano.jpg",
+    "genre": "Soundtrack",
+    "country": "UK"
+    },
+  
+  {
+    "artist": "Pink Floyd",
+    "album": "The Division Bell",
+    "year": "1994",
+    "image": "../../assets/images/pink-floyd_the-division-bell.jpg",
+    "genre": "Progressive rock",
+    "country": "UK"
+  },
+
+  {
+    "artist": "Pantera",
+    "album": "The Great Southern Trendkill",
+    "year": "1996",
+    "image": "../../assets/images/pantera_the-great-southern-trendkill.jpg",
+    "genre": "Metal",
+    "country": "USA"
+  },
+
+  {
+    "artist": "Presence",
+    "album": "All Systems Gone ",
+    "year": "1999",
+    "image": "../../assets/images/presence_all-systems-gone.jpg",
+    "genre": "Electronic",
+    "country": "UK"
+    },
+
+  {
+    "artist": "Public Enemy",
+    "album": "Muse Sick-n-Hour Mess Age",
+    "year": "1994",
+    "image": "../../assets/images/public-enemy_muse-sick-n-hour-mess-age.jpg",
+    "genre": "Rap",
+    "country": "USA"
+  },
+
+  {
+    "artist": "Rinôçérôse",
+    "album": "Installation Sonore",
+    "year": "1999",
+    "image": "../../assets/images/rinocerose_installation-sonore.jpg",
+    "genre": "Electronic",
+    "country": "France"
+    },
+
+  {
+    "artist": "Rollins Band",
+    "album": "Come In and Burn",
+    "year": "1997",
+    "image": "../../assets/images/rollins-band_come-in-and-burn.jpg",
+    "genre": "Metal",
+    "country": "USA"
+  },
+
+  {
+    "artist": "The Roots",
+    "album": "Things Fall Apart",
+    "year": "1999",
+    "image": "../../assets/images/the-roots_things-fall-apart.jpg",
+    "genre": "Rap",
+    "country": "USA"
+  },
+
+  {
+    "artist": "Roudoudou",
+    "album": "Tout l'Univers : Listener's Digest",
+    "year": "1998",
+    "image": "../../assets/images/roudoudou_tout-l-univers-listeners-digest.jpg",
+    "genre": "Electronic",
+    "country": "France"
+  },
+
+  {
+    "artist": "Silmarils",
+    "album": "Silmarils",
+    "year": "1995",
+    "image": "../../assets/images/silmarils_silmarils.jpg",
+    "genre": "Rock Fusion",
+    "country": "France"
+  },
+
+  {
+    "artist": "Slayer",
+    "album": "Divine Intervention",
+    "year": "1994",
+    "image": "../../assets/images/slayer_divine-intervention.jpg",
+    "genre": "Metal",
+    "country": "USA"
+  },
+
+  {
+    "artist": "Terranova",
+    "album": "Hitchhiking Nonstop With No Particular Destination",
+    "year": "2002",
+    "image": "../../assets/images/terranova_hitchhiking-nonstop-with-no-particular-destination.jpg",
+    "genre": "Electronic",
+    "country": "Germany"
+  },
+
+  {
+    "artist": "Erik Truffaz",
+    "album": "The Dawn",
+    "year": "1998",
+    "image": "../../assets/images/erik_truffaz_the-dawn.jpg",
+    "genre": "Jazz Fusion",
+    "country": "France"
+  },
+
+
+  {
+  "artist": "Various",
+  "album": "Godzilla: The Album",
+  "year": "1998",
+  "image": "../../assets/images/godzilla-soundtrack.jpg",
+  "genre": "Soundtrack",
+  "country": "Various"
+  },
+
+  {
+    "artist": "ZZ Top",
+    "album": "Antenna",
+    "year": "1993",
+    "image": "../../assets/images/zz-top_antenna.jpg",
+    "genre": "Blues Rock",
+    "country": "USA"
+  }
+  ]
